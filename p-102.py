@@ -3,6 +3,8 @@ import time
 import random
 def take_snapshot():
     number=random.randint(0,100)
+    if(number<0):
+        number=1
     videoCaptureObject=cv2.VideoCapture(0)
     result=True
     while(result):
